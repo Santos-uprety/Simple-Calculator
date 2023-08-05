@@ -41,6 +41,16 @@ body{
     margin-bottom: 15px;
 }
 .operator {
-    background-color: orange;
+    background-color: rgba(230, 155, 17, 0.87);
     color: aliceblue;
+}
+.buttons button:active {
+    transform: scale(0.99);
+}
+.buttons button {
+    font-size: 25px;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
 }
