@@ -39,6 +39,7 @@ body{
     font-size: 35px;
     background-color: grey;
     margin-bottom: 15px;
+    border-radius: 6px;
 }
 .operator {
     background-color: rgba(230, 155, 17, 0.87);
