@@ -1,108 +1,233 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Simple Calculator
+![Website Mock Up](assets/images/Screenshot%202023-08-07%20182511.jpg)
+The live website can be found [here](https://santos-uprety.github.io/Simple-Calculator)
 
-Welcome Santos-uprety uprety,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Purpose
+This project was created for the purpose of Second Project Portfolio for The Code Institute's Full Stack Development course.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
+## Table of Contents
+* [User Experience Design (UX)](#User-Experience-Design)
+    * [The Strategy Plane](#The-Strategy-Plane)
+    * [User stories](#User-Stories)
+    * [The Scope Plane](#The-Scope-Plane)
+    * [The Structure Plane](#The-Structure-Plane)
+    * [The Surface Plane](#The-Surface-Plane)
+    * [Design](#Design)
+            * [Colour Scheme](#Colour-Scheme)
+            * [Typography](#Typography)
+    * [Differences to Design](#Differences-to-Design)
+- [Features](#Features)
+    * [Existing Features](#Existing-Features)
+    * [Features Left to Implement](#Features-Left-to-Implement)
+* [Technologies](#Technologies)
+* [Testing](#Testing)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+    * [Test Strategy](#Test-Strategy)
+    * [Test Results](#Test-Results)
+    * [Issues and Resolutions](#Issues-and-Resolutions-to-issues-found-during-testing)
+*   [Deployment](#Deployment)
 
-`python3 -m http.server`
+    * [Project Creation](#Project-Creation)
+    * [GitHub Pages](#Using-Github-Pages)
 
-A blue button should appear to click: _Make Public_,
+* [Credits](#Credits)
+  * [Acknowledgements](#Acknowledgements)
 
-Another blue button should appear to click: _Open Browser_.
+****
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## User Experience Design
+### **The Strategy Plane**
+This project was created to test my knowledge of HTML, CSS and JavaScript and to offer users some experience with fully functional calculator.
 
-A blue button should appear to click: _Make Public_,
+Objectives of the project:
+* To implement the basic skills I have learnt in HTML, CSS and JavaScript.
+* To create interactive and fully responsive calculator.
 
-Another blue button should appear to click: _Open Browser_.
+#### User stories
+* As a user, I want to grasp the site's main purpose quickly.
+* As a user, I want to see clear contrast of colours upon initial opening.
+* As a user, I want this website to be responsive and to be able to use it in different devices.
+* As a user, I want to access a calculator that works properly and delivers accurate data.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+### **The Scope Plane**
+Features planned:
+* Buttons - interactive and responsive
+* Display screen - clear and visible
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### **The Structure Plane**
 
-------
+User Story:
+> As a user, I want to grasp the site's main purpose quickly.
+ 
+ Acceptance Criteria:
+* The calculator is designed to be user-friendly and efficient.
+* The calculator is ready for use upon initial opening.
 
-## Release History
+Description:<br>
+As soon as I launch the application, I can start performing calculations without any additional steps. The interface is intuitive and responsive, and the results are displayed instantly.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+User Story:
+> As a user, I want to see clear contrast of colours upon initial opening.
+ 
+ Acceptance Criteria:
+ * The colours used are easily distinguishable and do not cause eye strain or confusion.
+ 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+Description:<br>
+One of the requirements for the user interface design is to ensure that the colours used in this design are carefully chosen, so that I can navigate the app without difficulty and enjoy the visual experience.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+User Story:
+> As a user, I want this website to be responsive and to be able to use it in different devices.
+ 
+ Acceptance Criteria:
+ * The calculator should adapt to different screen sizes and orientations.
+ * The calculator should load quickly and smoothly on various devices and browsers.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+Description:<br>
+My web design approach relies on flex properties to achieve responsiveness. This means that the layout can adapt to different screen sizes and orientations without compromising the user experience.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+User Story:
+> As a user, I want to access a calculator that works properly and delivers accurate data.
+ 
+ Acceptance Criteria:
+ * The calculator should perform basic arithmetic operations such as addition, subtraction, multiplication and division.
+ * The calculator should clear the previous result when a new operation is started.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Description:<br>
+I expect the calculator to work properly, give accurate results and support various mathematical operations and functions. The calculator should be reliable, fast and error-free.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### **The Surface Plane**
+### Design
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+#### Colour Scheme
+Special character buttons: rgba(230, 155, 17, 0.87),
+Numbers buttons: aliceblue,
+Background: grey.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+#### Typography
+The headers and body on all pages throughout the Website are using the ['https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Poppins:wght@100;300;400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap']
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
+#### Differences to Design
 
-## FAQ about the uptime script
+All aspects specified in the Structure Plane were executed according to plan.
 
-**Why have you added this script?**
+****
+## Features
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Existing Features
 
-**How will this affect me?**
+Our calculator app is easy and convenient to use and is designed to be user-friendly. It can perform basic arithmetic operations, such as addition, subtraction, multiplication and division.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Features Left to Implement
+* One of the features left to implement in our calculator app is the ability to handle decimal points. Currently, our app only works with integers, which limits its functionality and accuracy. We need to modify our code to accept and process decimal inputs and outputs, as well as round them appropriately. Another feature we need to upgrade is our equation solver. Right now, it can only handle basic arithmetic operations, but we want to expand it to include more complex expressions, such as fractions, exponents, roots, trigonometry, and logarithms. This will require us to implement a parser and an evaluator for the equations, as well as a user interface that allows the user to enter and edit them easily.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+****
+## Technologies
+* [JavaScript] (https://en.wikipedia.org/wiki/javascript)
+	* This project relies on JavaScript for creating, manipulating and updating functions of the calculator.
+* [HTML](https://en.wikipedia.org/wiki/HTML)
+	* This project uses HTML as the main language used to complete the structure of the calculator.
+* [CSS](https://en.wikipedia.org/wiki/CSS)
+	* This project uses custom written CSS to style the calculator.
+* [Google Fonts](https://fonts.google.com/)
+	* Google fonts are used throughout the project to import the *Oswald* and *sans-serif* fonts.
+* [GitHub](https://github.com/)
+	* GithHub is the hosting site used to store the source code for the Website and [Git Pages](https://pages.github.com/) is used for the deployment of the live site.
+* [Git](https://gitpod.io/)
+	* Git is used as version control software to commit and push code to the GitHub repository where the source code is stored.   
+* [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
+	* Google chromes built in developer tools are used to inspect page elements and help debug issues with the site layout and test different CSS styles.
+* [Techsini](http://techsini.com/multi-mockup/index.php)
+    * Techsini.com Multi Device Website Mockup Generator was used to create the Mock up image in this README.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+****
+## Testing
 
-**So….?**
+### Test Strategy
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+#### **Summary**
 
-**Can I opt out?**
+Testing is done to validate HTML and CSS codes.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+HTML code must pass through the [W3C HTML Validator](https://validator.w3.org/).
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+CSS code must pass through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
 
-**Anything more?**
+![Results](assets/images/css%20pic1.png)<br>
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+Accessibility
 
----
+Home desktop
 
-Happy coding!
+![Results](assets/images/Home%20desktop.png)<br>
+
+Home mobile
+
+![Results](assets/images/Home%20mobile%20.png)<br>
+
+Album desktop
+
+![Results](assets/images/Album%20desktop.png)<br>
+
+Album mobile
+
+![Results](assets/images/Album%20mobile.png)<br>
+
+Enquiry desktop
+
+![Results](assets/images/Enquiry%20desktop.png)<br>
+
+Enquiry mobile
+
+![Results](assets/images/Enquiry%20mobile.png)<br>
+
+
+
+### Test Results
+
+![Results](assets/images/testing%20table.PNG)<br>
+
+### Issues and Resolutions
+
+* Subheading is not aligning as the screen size goes down.
+
+
+## Deployment
+
+### Project Creation
+The first step in this project was to set up a new repository using the Gitpod full template from Code Institute. I gave the repository a name and made it public. Then I clicked on the button to create a new repository from the template. Next, I opened the Gitpod editor and selected the repository I had just created. I added an index.html file and a folder called assets that contained a Css folder. Inside the css folder, I created a style.css file. I also created JS folder inside which I created script.js file.
+
+The following commands were used for version control throughout the project:
+* git add filename - This command was used to add files to the staging area before committing.
+* git commit -m "commit message explaining the updates" - This command was used to to commit changes to the local repository.
+* git push - This command is used to push all committed changes to the GitHub repository.
+
+### GitHub Pages
+1. Navigate to the GitHub [Repository:](https://santos-uprety.github.io/Simple-Calculator/)
+1. Click the 'Settings' Tab.
+1. Scroll Down to the Git Hub Pages Heading.
+1. Select 'Main Branch' as the source.
+1. Click the Save button.
+1. Click on the link to go to the live deployed page.
+
+
+****
+## Credits
+Credit to https://www.w3schools.com/, https://developer.mozilla.org/ and Code Institute Love Maths Walkthrough project and also 100jsprojects.
+
+
+
+
+### Acknowledgements
+I would like to thank my tutor Ronan for his support and insights.
+****
