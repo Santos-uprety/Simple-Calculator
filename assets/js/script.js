@@ -1,5 +1,5 @@
 const display = document.querySelector(".screen");
-const buttons = document.querySelectorAll("button")
+const buttons = document.querySelectorAll("button");
 const specialCharacter = ["%", "/", "*", "+", "-", "="];
 let output ="";
 
@@ -12,6 +12,7 @@ const calculate = (btnValue) => {
     } else if (btnValue === "AC") {
        output = ""; 
     } else if (btnValue === "DEL") {
+        //When DEL is clicked, it remove the last character from the output.
         output = output.toString().slice(0, -1);
     } else {
         if (output === "" && specialCharacter.includes(btnValue)) return;

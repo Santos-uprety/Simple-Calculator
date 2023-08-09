@@ -68,7 +68,7 @@ User Story:
 * The calculator is ready for use upon initial opening.
 
 Description:<br>
-As soon as I launch the application, I can start performing calculations without any additional steps. The interface is intuitive and responsive, and the results are displayed instantly.
+As soon as I launch the page, I can start performing calculations without any additional steps. The interface is intuitive and responsive, and the results are displayed instantly.
 
 
 User Story:
@@ -79,7 +79,7 @@ User Story:
  
 
 Description:<br>
-One of the requirements for the user interface design is to ensure that the colours used in this design are carefully chosen, so that I can navigate the app without difficulty and enjoy the visual experience.
+One of the requirements for the user interface design is to ensure that the colours used in this design are carefully chosen, so that I can navigate without difficulty and enjoy the visual experience.
 
 User Story:
 > As a user, I want this website to be responsive and to be able to use it in different devices.
@@ -89,7 +89,7 @@ User Story:
  * The calculator should load quickly and smoothly on various devices and browsers.
 
 Description:<br>
-My web design approach relies on flex properties to achieve responsiveness. This means that the layout can adapt to different screen sizes and orientations without compromising the user experience.
+My web design approach relies on flex properties rather then media queries to achieve responsiveness. This means that the layout can adapt to different screen sizes and orientations without compromising the user experience.
 
 
 User Story:
@@ -114,7 +114,7 @@ Background: grey.
 
 
 #### Typography
-The headers and body on all pages throughout the Website are using the ['https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Poppins:wght@100;300;400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap']
+The font used here is from ['https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Poppins:wght@100;300;400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap']
 
 
 #### Differences to Design
@@ -126,10 +126,10 @@ All aspects specified in the Structure Plane were executed according to plan.
 
 ### Existing Features
 
-Our calculator app is easy and convenient to use and is designed to be user-friendly. It can perform basic arithmetic operations, such as addition, subtraction, multiplication and division.
+Our calculator is easy and convenient to use and is designed to be user-friendly. It can perform basic arithmetic operations, such as addition, subtraction, multiplication and division.
 
 ### Features Left to Implement
-* One of the features left to implement in our calculator app is the ability to handle decimal points. Currently, our app only works with integers, which limits its functionality and accuracy. We need to modify our code to accept and process decimal inputs and outputs, as well as round them appropriately. Another feature we need to upgrade is our equation solver. Right now, it can only handle basic arithmetic operations, but we want to expand it to include more complex expressions, such as fractions, exponents, roots, trigonometry, and logarithms. This will require us to implement a parser and an evaluator for the equations, as well as a user interface that allows the user to enter and edit them easily.
+* One of the features left to implement in our calculator is the ability to handle decimal points. Currently, our calculator only works with integers, which limits its functionality and accuracy. We need to modify our code to accept and process decimal inputs and outputs, as well as round them appropriately. Another feature we need to upgrade is our equation solver. Right now, it can only handle basic arithmetic operations, but we want to expand it to include more complex expressions, such as fractions, exponents, roots, trigonometry, and logarithms. This will require us to implement a parser and an evaluator for the equations, as well as a user interface that allows the user to enter and edit them easily.
 
 ****
 ## Technologies
@@ -163,49 +163,28 @@ HTML code must pass through the [W3C HTML Validator](https://validator.w3.org/).
 
 CSS code must pass through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
 
-![Results](assets/images/css%20pic1.png)<br>
+JavaScript code must pass through[JavaScript validator](https://jshint.com/)
 
 Accessibility
 
 Home desktop
-
-![Results](assets/images/Home%20desktop.png)<br>
+![Results](assets/images/Screenshot%202023-08-08%20191231.jpg)<br>
 
 Home mobile
-
-![Results](assets/images/Home%20mobile%20.png)<br>
-
-Album desktop
-
-![Results](assets/images/Album%20desktop.png)<br>
-
-Album mobile
-
-![Results](assets/images/Album%20mobile.png)<br>
-
-Enquiry desktop
-
-![Results](assets/images/Enquiry%20desktop.png)<br>
-
-Enquiry mobile
-
-![Results](assets/images/Enquiry%20mobile.png)<br>
-
-
+![Results](assets/images/Screenshot%202023-08-08%20191109.jpg)<br>
 
 ### Test Results
 
-![Results](assets/images/testing%20table.PNG)<br>
+![Results](assets/images/Tests.PNG)<br>
 
 ### Issues and Resolutions
 
-* Subheading is not aligning as the screen size goes down.
-
+No issues
 
 ## Deployment
 
 ### Project Creation
-The first step in this project was to set up a new repository using the Gitpod full template from Code Institute. I gave the repository a name and made it public. Then I clicked on the button to create a new repository from the template. Next, I opened the Gitpod editor and selected the repository I had just created. I added an index.html file and a folder called assets that contained a Css folder. Inside the css folder, I created a style.css file. I also created JS folder inside which I created script.js file.
+The first step in this project was to set up a new repository using the Gitpod full template from Code Institute. I gave the repository a name and made it public. Then I clicked on the button to create a new repository from the template. Next, I opened the Gitpod editor and selected the repository I had just created. I added an index.html file and a folder called assets that contained a css folder. Inside the css folder, I created a style.css file. I also created JS folder inside which I created script.js file.
 
 The following commands were used for version control throughout the project:
 * git add filename - This command was used to add files to the staging area before committing.
